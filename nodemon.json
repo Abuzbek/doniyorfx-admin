@@ -1,0 +1,8 @@
+{
+  "ext": "js,json",
+  "ignore": [
+    "*.spec.*",
+    "test"
+  ],
+  "exec": "node ./index.js"
+}
