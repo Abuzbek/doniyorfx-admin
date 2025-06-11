@@ -6,11 +6,11 @@ export const CreateCsvService = async (data, res) => {
   // const date = dayjs().format("DDMMYYYY-HHmmss_SSS");
   // const ws = fs.createWriteStream("./public/images/" + date + "-users.csv");
   const createLink = (link) => {
-    if (process.env.NODE_ENV === "production") {
+    // if (process.env.NODE_ENV === "production") {
       return `https://doniyorfx.uz${link}`;
-    } else {
-      return `http://localhost:8080${link}`;
-    }
+    // } else {
+      // return `http://localhost:8080${link}`;
+    // }
   };
   const plans = [
     {
@@ -25,7 +25,7 @@ export const CreateCsvService = async (data, res) => {
     },
     {
       title: "VIP tarif",
-      price: "7 997 000 so‘m",
+      price: "8 997 000 so‘m",
       value: 3,
     },
     {

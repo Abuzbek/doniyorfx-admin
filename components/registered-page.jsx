@@ -37,11 +37,11 @@ export default function RegisteredExcel() {
   ];
 
   const createCSVLink = () => {
-    if (process.env.NODE_ENV !== "production") {
-      window.open(`http://localhost:8080/api/registered/csv`);
-    } else {
+    // if (process.env.NODE_ENV !== "production") {
+      // window.open(`http://localhost:8080/api/registered/csv`);
+    // } else {
       window.open(`https://doniyorfx.uz/api/registered/csv`);
-    }
+    // }
   };
   return (
     <Box p="xl">

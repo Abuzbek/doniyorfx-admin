@@ -48,19 +48,19 @@ export default function Excel() {
     },
   ];
   const createLink = (link) => {
-    if (process.env.NODE_ENV === "production") {
+    // if (process.env.NODE_ENV === "production") {
       return `https://doniyorfx.uz${link}`;
-    } else {
-      return `http://localhost:8080${link}`;
-    }
+    // } else {
+      // return `http://localhost:8080${link}`;
+    // }
   };
 
   const createCSVLink = () => {
-    if (process.env.NODE_ENV !== "production") {
-      window.open(`http://localhost:8080/api/v2/payment/csv`);
-    } else {
+    // if (process.env.NODE_ENV !== "production") {
+      // window.open(`http://localhost:8080/api/v2/payment/csv`);
+    // } else {
       window.open(`https://doniyorfx.uz/api/v2/payment/csv`);
-    }
+    // }
   };
   return (
     <Box p="xl">
