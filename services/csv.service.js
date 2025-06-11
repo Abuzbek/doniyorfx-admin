@@ -7,9 +7,9 @@ export const CreateCsvService = async (data, res) => {
   // const ws = fs.createWriteStream("./public/images/" + date + "-users.csv");
   const createLink = (link) => {
     // if (process.env.NODE_ENV === "production") {
-      return `https://doniyorfx.uz${link}`;
+    return `https://doniyorfx.uz${link}`;
     // } else {
-      // return `http://localhost:8080${link}`;
+    // return `http://localhost:8080${link}`;
     // }
   };
   const plans = [
@@ -27,11 +27,6 @@ export const CreateCsvService = async (data, res) => {
       title: "VIP tarif",
       price: "8,997 000 so‘m",
       value: 3,
-    },
-    {
-      title: "Shogirtlik",
-      price: "19 339 000 so‘m",
-      value: 4,
     },
   ];
   const sheet = [

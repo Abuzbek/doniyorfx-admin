@@ -49,17 +49,17 @@ export default function Excel() {
   ];
   const createLink = (link) => {
     // if (process.env.NODE_ENV === "production") {
-      return `https://doniyorfx.uz${link}`;
+    return `https://doniyorfx.uz${link}`;
     // } else {
-      // return `http://localhost:8080${link}`;
+    // return `http://localhost:8080${link}`;
     // }
   };
 
   const createCSVLink = () => {
     // if (process.env.NODE_ENV !== "production") {
-      // window.open(`http://localhost:8080/api/v2/payment/csv`);
+    // window.open(`http://localhost:8080/api/v2/payment/csv`);
     // } else {
-      window.open(`https://doniyorfx.uz/api/v2/payment/csv`);
+    window.open(`https://doniyorfx.uz/api/payment/csv`);
     // }
   };
   return (

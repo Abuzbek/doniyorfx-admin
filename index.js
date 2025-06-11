@@ -32,8 +32,8 @@ const dashboardHandler = async () => {
 const adminJs = new AdminJS({
   resources: [
     UserResource,
-    // PaymentResource,
-    PaymentV2Resource,
+    PaymentResource,
+    // PaymentV2Resource,
     // RegisteredResource,
   ],
   options: {},

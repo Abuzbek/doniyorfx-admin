@@ -18,11 +18,6 @@ const PlanShow = (props) => {
       price: "8 997 000 so‘m",
       value: 3,
     },
-    {
-      title: "Shogirtlik",
-      price: "19 339 000 so‘m",
-      value: 4,
-    },
   ];
   if (plans.find((n) => n.value === value)) {
     return (
