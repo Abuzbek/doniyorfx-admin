@@ -47,7 +47,7 @@ export const CreateCsvService = async (data, res) => {
         },
         {
           label: "Tarif",
-          value: (row) => plans.find((plan) => plan.value === row.plan).title,
+          value: (row) => plans.find((plan) => plan.value === row.plan)?.title,
         },
         {
           label: "Rasm",

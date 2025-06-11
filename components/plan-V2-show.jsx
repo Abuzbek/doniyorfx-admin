@@ -23,7 +23,7 @@ const PlanShowV2 = (props) => {
     return (
       <Box style={{ marginBottom: 24 }}>
         <Label variant="light">Tarifi</Label>
-        {plans.find((n) => n.value === value).title}
+        {plans.find((n) => n.value === value)?.title}
       </Box>
     );
   } else {

@@ -19,7 +19,7 @@ const PlanV2 = (props) => {
     },
   ];
   if (plans.find((n) => n.value === value)) {
-    return plans.find((n) => n.value === value).title;
+    return plans.find((n) => n.value === value)?.title;
   } else {
     return value;
   }
